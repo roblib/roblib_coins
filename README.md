@@ -13,7 +13,7 @@ Install as
 
 ## Usage
 
-After installing and enabling module, navigate to `admin/config/system/coin-settings` tp pair Drupal Fields with parameters for the COIN URL.
+After installing and enabling module, navigate to `admin/config/system/coin-settings` to pair Drupal Fields with parameters for the COIN URL.
 
 ## Maintainers
 Current maintainers:
