@@ -1,0 +1,4 @@
+services:
+  roblib_coins.mint_coin_service:
+    class: 'Drupal\roblib_coins\Service\RoblibCoinsService'
+    arguments: ['@entity_type.manager', '@config.factory']

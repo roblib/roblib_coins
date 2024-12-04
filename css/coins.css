@@ -1,0 +1,9 @@
+/* Target the terms-table class */
+.terms-table {
+  width: 80%;
+  table-layout: fixed;
+}
+
+.terms-table th, .terms-table td {
+  width: 50%; /* Equal width for both columns */
+}

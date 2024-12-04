@@ -1,0 +1,7 @@
+roblib_coins.coin_settings:
+  path: '/admin/config/system/coin-settings'
+  defaults:
+    _title: 'Coin settings'
+    _form: 'Drupal\roblib_coins\Form\CoinSettingsForm'
+  requirements:
+    _permission: 'administer site configuration'

@@ -1,0 +1,7 @@
+name: 'Roblib COINS'
+type: module
+description: 'Creates COINS compliant URLS'
+package: Custom
+core_version_requirement: ^10 || ^11
+dependencies:
+  - islandora:islandora

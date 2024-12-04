@@ -1,0 +1,8 @@
+# Schema for the configuration files of the Roblib COINS module.
+roblib_coins.settings:
+  type: config_object
+  label: 'Roblib COINS settings'
+  mapping:
+    example:
+      type: string
+      label: 'Example'

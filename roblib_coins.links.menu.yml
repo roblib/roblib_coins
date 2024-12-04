@@ -1,0 +1,6 @@
+roblib_coins.coin_settings:
+  title: Coin settings
+  description: Setting for COIN Url generation
+  parent: system.admin_config_system
+  route_name: roblib_coins.coin_settings
+  weight: 10
