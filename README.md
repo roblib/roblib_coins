@@ -4,7 +4,7 @@ Creates Compliant COIN URLs
 
 ## Introduction
 
-A block with an ebscohost link is now available to place on any page.
+A block with an EBSCOhost link is now available to place on any page. The block will not display if the Authors field is unpopulated or the Genre field is `Dissertations/Thesis`.
 
 ## Installation
 
