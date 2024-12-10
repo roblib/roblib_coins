@@ -15,7 +15,7 @@ Install as
 
 After installing and enabling the module, navigate to `admin/config/system/coin-settings` to pair Drupal Fields with parameters for the COIN URL. Then, place the block in the usual way.
 
-The URL can also be retrieved programmatically using the `mainCoin` function on `rooblib_coins.mint_coin_serviceblib`
+The URL can also be retrieved programmatically using the `mintCoin` function on `roblib_coins.mint_coin_service`
 
 ## Maintainers
 Current maintainers:
