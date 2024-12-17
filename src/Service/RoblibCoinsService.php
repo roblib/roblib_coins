@@ -93,8 +93,9 @@ class RoblibCoinsService {
     $params = array_filter($params);
     $options = ['absolute' => TRUE, 'query' => $params];
     $url = Url::fromUri($coins_base_url, $options);
-    $link = Link::fromTextAndUrl('Check@UPEI', $url)->toString();
-    return $link;
+    $proxy_url = 'http://proxy.library.upei.ca/login?url=' . $url->toString();
+    $escaped_proxy_url = htmlspecialchars($proxy_url, ENT_NOQUOTES, 'UTF-8');
+    return "<a href=\"$escaped_proxy_url\" class=\"coins_url\">Check@UPEI</a>";
   }
 
   /**
