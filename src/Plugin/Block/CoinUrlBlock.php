@@ -9,6 +9,7 @@ use Drupal\Core\Plugin\ContainerFactoryPluginInterface;
 use Drupal\Core\Routing\RouteMatchInterface;
 use Drupal\roblib_coins\Service\RoblibCoinsService;
 use Symfony\Component\DependencyInjection\ContainerInterface;
+use Drupal\node\NodeInterface;
 
 /**
  * Provides a coin url block.
@@ -52,6 +53,9 @@ final class CoinUrlBlock extends BlockBase implements ContainerFactoryPluginInte
    */
   public function build(): array {
     $node = $this->routeMatch->getParameter('node');
+    if (is_string($node)) {
+      $node = $this->roblibCoinsMintCoinService->nodeFromNid($node);
+    }
     $markup = $this->roblibCoinsMintCoinService->mintCoin($node);
     $build['content'] = [
       '#markup' => "<span class = 'coin-url'>$markup</span>",

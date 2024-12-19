@@ -5,7 +5,6 @@ namespace Drupal\roblib_coins\Service;
 use Drupal\node\NodeInterface;
 use Drupal\Core\Entity\EntityTypeManagerInterface;
 use Drupal\Core\Url;
-use Drupal\Core\Link;
 use Drupal\Core\Config\ConfigFactoryInterface;
 
 /**
@@ -117,6 +116,13 @@ class RoblibCoinsService {
     }
     return NULL;
 
+  }
+
+  /**
+   * Loads and returns node from supplied nid.
+   */
+  public function nodeFromNid($nid) {
+    return $this->entityTypeManager->getStorage('node')->load($nid);
   }
 
 }
